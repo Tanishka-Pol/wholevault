@@ -1,16 +1,15 @@
-import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import './App.css'
+import DashboardLayout from './layouts/DashboardLayout.jsx'
+import Dashboard from './pages/dashboard/Dashboard.jsx'
 
 function App() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-slate-950">
-      <h1 className="text-4xl font-bold text-white">
-        WholeVault
-      </h1>
-    </div>
+    <DashboardLayout
+      title="Dashboard"
+      description="Everything important, in one place."
+      activeItem="dashboard"
+    >
+      <Dashboard />
+    </DashboardLayout>
   )
 }
 
